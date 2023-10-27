@@ -1,2 +1,3 @@
-# project-1
-Weather app that displays daily dad jokes
+# Dad-Joke-Weather-App
+
+Weather app that displays dad jokes
