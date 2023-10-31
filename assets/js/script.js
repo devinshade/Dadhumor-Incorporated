@@ -77,6 +77,8 @@ function searchCity (cityName) {
         var lowTemp = forecastData[i].main.temp_min;
         var windSpeed = forecastData[i].wind.speed;
         var humidity = forecastData[i].main.humidity;
+        var weatherIcon = forecastData[i].weather[0].icon
+        var iconURL = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
   
         // Creates the cards for the 5 day forecast based on each array
         var forecastCard = document.createElement('div');
@@ -85,6 +87,7 @@ function searchCity (cityName) {
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
+              <img src="${iconURL}"></img>
               <p>High Temp: ${highTemp}°F</p>
               <p>Low Temp: ${lowTemp}°F</p>
               <p>Wind Speed: ${windSpeed} m/s</p>
