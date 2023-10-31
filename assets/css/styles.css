@@ -1,0 +1,17 @@
+:root {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #D2E6BC;
+}
+
+header {
+    padding: 10px;
+    margin: 10px 100px 10px 100px;
+}
+
+.btn-flat {
+    font-style: italic;
+}
+
+#city {
+    display: inline;
+}
