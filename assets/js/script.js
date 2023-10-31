@@ -6,6 +6,7 @@ var temperatureEl = document.getElementById('temperature');
 var humidityEl = document.getElementById('humidity');
 var windSpeedEl = document.getElementById('wind-speed');
 var forecastElement = document.getElementById('forecast');
+var city = document.getElementById('city');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -17,15 +18,14 @@ form.addEventListener('submit', function(event) {
 
   var cityLoc = localStorage.getItem("City");
   var button = document.createElement("button");
+  var textNode = document.createTextNode(cityLoc);
 
-  button.classList.add("btn");
-  button.textContent = cityLoc;
+  city.appendChild(textNode);
 
   button.addEventListener("click", function() {
     searchCity(cityLoc);
   });
 
-  document.getElementById("buttons-container").appendChild(button);
 });
 
 function searchCity (cityName) {
