@@ -89,7 +89,13 @@ function searchCity (cityName) {
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
+<<<<<<< HEAD
               <p>Temperature: ${temp}°F</p>
+=======
+              <p>High Temp: ${highTemp}°F</p>
+              <p>Low Temp: ${lowTemp}°F</p>
+              <p>Wind Speed: ${windSpeed} m/s</p>
+>>>>>>> 6ce4a68 (Adds icons to the 5 day forecast cards)
               <p>Humidity: ${humidity}%</p>
               <p>Wind Speed: ${windSpeed} m/s</p>
             </div>
