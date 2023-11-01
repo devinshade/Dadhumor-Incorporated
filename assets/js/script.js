@@ -84,7 +84,7 @@ function searchCity (cityName) {
         var forecastCard = document.createElement('div');
         forecastCard.className = 'col s12 m6 l2';
         forecastCard.innerHTML = `
-          <div class="card blue-grey darken-1">
+          <div class="card deep-purple darken-4">
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
