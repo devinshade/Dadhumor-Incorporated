@@ -85,7 +85,11 @@ function searchCity (cityName) {
         var forecastCard = document.createElement('div');
         forecastCard.className = 'forecast-card';
         forecastCard.innerHTML = `
+<<<<<<< HEAD
           <div class="card pink lighten-1 center-align">
+=======
+          <div class="card deep-purple darken-4">
+>>>>>>> e119b97 (changed color scheme and font family and commented next steps)
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
