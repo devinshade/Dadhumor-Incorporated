@@ -73,3 +73,8 @@ position: relative;
 bottom: 175px;
 right: 220px;
 }
+
+.input-field input[type=text]:focus {
+    border-bottom: 0px;
+    box-shadow: 0 0px 0 0 #000;
+}
