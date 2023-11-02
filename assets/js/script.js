@@ -104,3 +104,66 @@ function searchCity (cityName) {
       console.error('Error:', error);
     });
     };
+
+
+
+    async function getDadJoke() {
+      try {
+        // Fetch joke
+        const jokeResponse = await fetch('https://icanhazdadjoke.com/', {
+          headers: {
+            'Accept': 'application/json',
+            'User-Agent': 'DadJokeViewer'
+          }
+        });
+        const jokeData = await jokeResponse.json();
+        const jokeText = jokeData.joke;
+    
+        // Find where question mark is
+        const questionMarkIndex = jokeText.indexOf('?');
+    
+        // text before the question mark
+        const setup = jokeText.substring(0, questionMarkIndex + 1).trim();
+    
+        // text after the question mark
+        const punchline = jokeText.substring(questionMarkIndex + 1).trim();
+    
+        if (!setup || !punchline || !setup.includes('?')) {
+          // If it's not a question, fetch another joke
+          return getDadJoke();
+        }
+    
+        // Display the setup on the front of the flash card
+        document.getElementById('front').textContent = setup;
+    
+        // Display the punchline on the back of the flash card (initially hidden)
+        document.getElementById('back').textContent = punchline;
+      } catch (error) {
+        console.error('Error fetching dad joke:', error);
+      }
+    }
+    
+    function toggleFlashCard() {
+      // Toggle the display of front and back
+      const frontElement = document.getElementById('front');
+      const backElement = document.getElementById('back');
+    
+      if (backElement.style.display === 'none') {
+        frontElement.style.display = 'none';
+        backElement.style.display = 'block';
+      } else {
+        frontElement.style.display = 'block';
+        backElement.style.display = 'none';
+      }
+    }
+    
+    function getNextJoke() {
+      // Fetch a new joke when the "Next Joke" button is clicked
+      getDadJoke();
+    
+      // Ensure the flash card is set to display the front
+      document.getElementById('front').style.display = 'block';
+      document.getElementById('back').style.display = 'none';
+    }
+    
+    getDadJoke();
