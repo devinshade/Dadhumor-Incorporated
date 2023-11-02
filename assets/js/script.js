@@ -85,21 +85,11 @@ function searchCity (cityName) {
         var forecastCard = document.createElement('div');
         forecastCard.className = 'forecast-card';
         forecastCard.innerHTML = `
-<<<<<<< HEAD
           <div class="card pink lighten-1 center-align">
-=======
-          <div class="card deep-purple darken-4">
->>>>>>> e119b97 (changed color scheme and font family and commented next steps)
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
-<<<<<<< HEAD
               <p>Temperature: ${temp}°F</p>
-=======
-              <p>High Temp: ${highTemp}°F</p>
-              <p>Low Temp: ${lowTemp}°F</p>
-              <p>Wind Speed: ${windSpeed} m/s</p>
->>>>>>> 6ce4a68 (Adds icons to the 5 day forecast cards)
               <p>Humidity: ${humidity}%</p>
               <p>Wind Speed: ${windSpeed} m/s</p>
             </div>

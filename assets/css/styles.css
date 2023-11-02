@@ -52,9 +52,9 @@ right: 185%;
 }
 
 
-#forecast {
+/* #forecast {
 display: flex;
-}
+} */
 
 
 #weather-info {
@@ -77,4 +77,9 @@ right: 220px;
 .input-field input[type=text]:focus {
     border-bottom: 0px;
     box-shadow: 0 0px 0 0 #000;
+}
+#forecast {
+    display: flex;
+    flex-flow: column;
+    padding-right: 900px;
 }
