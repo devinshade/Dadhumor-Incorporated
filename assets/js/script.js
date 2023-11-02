@@ -173,6 +173,3 @@ function searchCity (cityName) {
     }
     
     getDadJoke();
-
-
-    
