@@ -1093,6 +1093,7 @@
 
 .green {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #64ffda !important;
 }
 
@@ -1105,6 +1106,13 @@
 .green-text {
   color: #4CAF50 !important;
 >>>>>>> 3d93de5 (Adds materialize CSS and JS for changing the searchbar color)
+=======
+  background-color: #64ffda !important;
+}
+
+.green-text {
+  color: #64ffda !important;
+>>>>>>> bd58e77 (Adds materialize JS and CSS)
 }
 
 .green.lighten-5 {
@@ -6262,10 +6270,14 @@ input[type=number]:not(.browser-default):focus.valid ~ label,
 input[type=search]:not(.browser-default):focus.valid ~ label,
 textarea.materialize-textarea:focus.valid ~ label {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #64ffda;
 =======
   color: #4CAF50;
 >>>>>>> 3d93de5 (Adds materialize CSS and JS for changing the searchbar color)
+=======
+  color: #64ffda;
+>>>>>>> bd58e77 (Adds materialize JS and CSS)
 }
 
 input:not([type]):focus.invalid ~ label,
@@ -6327,6 +6339,7 @@ input.valid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px solid #64ffda;
   -webkit-box-shadow: 0 1px 0 0 #64ffda;
           box-shadow: 0 1px 0 0 #64ffda;
@@ -6335,6 +6348,11 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-
   -webkit-box-shadow: 0 1px 0 0 #4CAF50;
           box-shadow: 0 1px 0 0 #4CAF50;
 >>>>>>> 3d93de5 (Adds materialize CSS and JS for changing the searchbar color)
+=======
+  border-bottom: 1px solid #64ffda;
+  -webkit-box-shadow: 0 1px 0 0 #64ffda;
+          box-shadow: 0 1px 0 0 #64ffda;
+>>>>>>> bd58e77 (Adds materialize JS and CSS)
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
@@ -6457,10 +6475,14 @@ textarea.materialize-textarea.valid ~ .helper-text:after,
 textarea.materialize-textarea:focus.valid ~ .helper-text:after, .select-wrapper.valid ~ .helper-text:after {
   content: attr(data-success);
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #64ffda;
 =======
   color: #4CAF50;
 >>>>>>> 3d93de5 (Adds materialize CSS and JS for changing the searchbar color)
+=======
+  color: #64ffda;
+>>>>>>> bd58e77 (Adds materialize JS and CSS)
 }
 
 input:not([type]).invalid ~ .helper-text:after,
@@ -8372,10 +8394,14 @@ input[type=range]::-ms-thumb {
 
 .slider .indicators .indicator-item.active {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #64ffda;
 =======
   background-color: #4CAF50;
 >>>>>>> 3d93de5 (Adds materialize CSS and JS for changing the searchbar color)
+=======
+  background-color: #64ffda;
+>>>>>>> bd58e77 (Adds materialize JS and CSS)
 }
 
 .carousel {
