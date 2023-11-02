@@ -11,8 +11,12 @@ var city = document.getElementById('city');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
+  var cityName = cityInput.value;
+
   searchCity(cityName);
   localStorage.setItem("City", cityName);
+
+  city.innerHTML = " "
 
   var cityLoc = localStorage.getItem("City");
   var button = document.createElement("button");
