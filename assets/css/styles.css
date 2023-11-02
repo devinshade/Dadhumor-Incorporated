@@ -15,3 +15,9 @@ header {
 #city {
     display: inline;
 }
+
+#forecast {
+    display: flex;
+    flex-flow: column;
+    padding-right: 900px;
+}
