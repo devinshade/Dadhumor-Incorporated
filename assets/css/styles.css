@@ -1,6 +1,6 @@
 :root {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #D2E6BC;
+    color: white;
+    font-family: 'Overpass', sans-serif;
 }
 
 header {
@@ -14,4 +14,10 @@ header {
 
 #city {
     display: inline;
+}
+
+#forecast {
+    display: flex;
+    flex-flow: column;
+    padding-right: 900px;
 }
