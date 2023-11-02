@@ -82,9 +82,9 @@ function searchCity (cityName) {
   
         // Creates the cards for the 5 day forecast based on each array
         var forecastCard = document.createElement('div');
-        forecastCard.className = 'col s12 m6 l2';
+        forecastCard.className = 'col s12 m6 l5';
         forecastCard.innerHTML = `
-          <div class="card blue-grey darken-1">
+          <div class="card deep-purple darken-4">
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
