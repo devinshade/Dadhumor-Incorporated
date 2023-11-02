@@ -37,3 +37,8 @@ header {
     position: relative;
     top: 90px;
   }
+
+.input-field input[type=text]:focus {
+    border-bottom: 0px;
+    box-shadow: 0 0px 0 0 #000;
+}
