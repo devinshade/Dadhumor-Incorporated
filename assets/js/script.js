@@ -72,8 +72,8 @@ function searchCity (cityName) {
         for (var i = 0; i < forecastData.length; i = i + 8){
 
         // Creates a new Date object using the value of forecastData[i].dt_txt, then stringifies it into MM/DD/YYYY
-        var forecastDate = new Date(forecastData[i].dt_txt).toLocaleDateString();
- 
+        var forecastDate = new Date(forecastData[i].dt_txt).toLocaleDateString('en-US', { weekday: 'long' })
+
         // Creates an array for each var
         var temp = forecastData[i].main.temp;
         var windSpeed = forecastData[i].wind.speed;
