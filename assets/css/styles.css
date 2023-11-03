@@ -3,6 +3,11 @@
     font-family: 'Overpass', sans-serif;
 }
 
+body {
+    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
+    background-size: 100%;
+}
+
 header {
     padding: 10px;
     margin: 10px 100px 10px 100px;
@@ -28,11 +33,11 @@ header {
     right: 58%;
 }
 
-  #back {
+#back {
     display: none;
 }
 
-  .getnextjokebutton {
+.getnextjokebutton {
     position: relative;
     top: 90px;
 }
