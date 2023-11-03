@@ -16,6 +16,8 @@ form.addEventListener('submit', function(event) {
   searchCity(cityName);
   localStorage.setItem("City", cityName);
 
+  city.innerHTML = " "
+
   var cityLoc = localStorage.getItem("City");
   var button = document.createElement("button");
   var textNode = document.createTextNode(cityLoc);
