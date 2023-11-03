@@ -75,8 +75,7 @@ function searchCity (cityName) {
         var forecastDate = new Date(forecastData[i].dt_txt).toLocaleDateString();
  
         // Creates an array for each var
-        var highTemp = forecastData[i].main.temp_max;
-        var lowTemp = forecastData[i].main.temp_min;
+        var temp = forecastData[i].main.temp;
         var windSpeed = forecastData[i].wind.speed;
         var humidity = forecastData[i].main.humidity;
         var weatherIcon = forecastData[i].weather[0].icon
@@ -90,10 +89,9 @@ function searchCity (cityName) {
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
-              <p>High Temp: ${highTemp}°F</p>
-              <p>Low Temp: ${lowTemp}°F</p>
-              <p>Wind Speed: ${windSpeed} m/s</p>
+              <p>Temperature: ${temp}°F</p>
               <p>Humidity: ${humidity}%</p>
+              <p>Wind Speed: ${windSpeed} m/s</p>
             </div>
           </div>
         `;
