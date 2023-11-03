@@ -21,11 +21,7 @@ header {
     display: inline;
 }
 
-#forecast {
-    display: flex;
-    flex-flow: column;
-    padding-right: 900px;
-}
+
 #flashCardContainer {
     width: 300px;
     margin: 20px auto;
@@ -36,7 +32,7 @@ header {
     position: relative;
     top: 90px;
     right: 58%;
-
+    margin-right: 185px;
 }
 
 #back {
@@ -55,6 +51,3 @@ header {
     padding-right: 900px;
 }
 
-#flashCardContainer {
-    margin-right: 185px;
-}
