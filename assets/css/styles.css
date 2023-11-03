@@ -1,6 +1,10 @@
 :root {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #D2E6BC;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
 }
 
 header {
@@ -16,6 +20,7 @@ header {
     display: inline;
 }
 
+
 #flashCardContainer {
     width: 300px;
     margin: 20px auto;
@@ -26,14 +31,22 @@ header {
     position: relative;
     top: 90px;
     right: 58%;
-   
-  }
+    margin-right: 185px;
+}
 
-  #back {
+#back {
     display: none;
-  }
+}
 
-  .getnextjokebutton {
+.getnextjokebutton {
     position: relative;
     top: 90px;
-  }
+    right: 190px;
+}
+
+#forecast {
+    display: inline;
+    flex-flow: column;
+    padding-right: 900px;
+}
+

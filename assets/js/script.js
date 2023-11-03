@@ -16,6 +16,8 @@ form.addEventListener('submit', function(event) {
   searchCity(cityName);
   localStorage.setItem("City", cityName);
 
+  city.innerHTML = " "
+
   var cityLoc = localStorage.getItem("City");
   var button = document.createElement("button");
   var textNode = document.createTextNode(cityLoc);
@@ -70,11 +72,10 @@ function searchCity (cityName) {
         for (var i = 0; i < forecastData.length; i = i + 8){
 
         // Creates a new Date object using the value of forecastData[i].dt_txt, then stringifies it into MM/DD/YYYY
-        var forecastDate = new Date(forecastData[i].dt_txt).toLocaleDateString();
- 
+        var forecastDate = new Date(forecastData[i].dt_txt).toLocaleDateString('en-US', { weekday: 'long' })
+
         // Creates an array for each var
-        var highTemp = forecastData[i].main.temp_max;
-        var lowTemp = forecastData[i].main.temp_min;
+        var temp = forecastData[i].main.temp;
         var windSpeed = forecastData[i].wind.speed;
         var humidity = forecastData[i].main.humidity;
         var weatherIcon = forecastData[i].weather[0].icon
@@ -82,16 +83,15 @@ function searchCity (cityName) {
   
         // Creates the cards for the 5 day forecast based on each array
         var forecastCard = document.createElement('div');
-        forecastCard.className = 'col s12 m6 l2';
+        forecastCard.className = 'col s10 m6 l3';
         forecastCard.innerHTML = `
-          <div class="card blue-grey darken-1">
+          <div class="card pink lighten-1 center-align">
             <div class="card-content white-text">
               <span class="card-title">${forecastDate}</span>
               <img src="${iconURL}"></img>
-              <p>High Temp: ${highTemp}°F</p>
-              <p>Low Temp: ${lowTemp}°F</p>
-              <p>Wind Speed: ${windSpeed} m/s</p>
+              <p>Temperature: ${temp}°F</p>
               <p>Humidity: ${humidity}%</p>
+              <p>Wind Speed: ${windSpeed} m/s</p>
             </div>
           </div>
         `;
