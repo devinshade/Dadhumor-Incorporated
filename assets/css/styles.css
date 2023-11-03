@@ -3,21 +3,13 @@ color: white;
 font-family: 'Overpass', sans-serif;
 }
 
-body {
-    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
-}
-
 header {
 padding: 10px;
 margin: 10px 100px 10px 100px;
 }
-
-
 .btn-flat {
 font-style: italic;
 }
-
-
 #city {
 display: inline;
 }
@@ -82,4 +74,3 @@ right: 220px;
     flex-flow: column;
     padding-right: 900px;
 }
-
