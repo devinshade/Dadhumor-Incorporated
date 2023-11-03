@@ -2,11 +2,10 @@
     color: white;
     font-family: 'Overpass', sans-serif;
 }
-
 body {
-    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
+    background-image:   linear-gradient(to right, #4A148C, #64FFDA, #EC407A);
+    background-size: 100%;
 }
-
 header {
     padding: 10px;
     margin: 10px 100px 10px 100px;
