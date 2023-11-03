@@ -3,6 +3,11 @@
     font-family: 'Overpass', sans-serif;
 }
 
+body {
+    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
+    background-size: 100%;
+}
+
 header {
     padding: 10px;
     margin: 10px 100px 10px 100px;
@@ -26,24 +31,26 @@ header {
     position: relative;
     top: 90px;
     right: 58%;
-   
-  }
 
-  #back {
+}
+
+#back {
     display: none;
-  }
+}
 
-  .getnextjokebutton {
+.getnextjokebutton {
     position: relative;
     top: 90px;
-  }
+}
 
 .input-field input[type=text]:focus {
     border-bottom: 0px;
     box-shadow: 0 0px 0 0 #000;
 }
+    
 #forecast {
-    display: flex;
+    display: inline;
     flex-flow: column;
     padding-right: 900px;
 }
+
