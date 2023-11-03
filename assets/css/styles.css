@@ -21,3 +21,24 @@ header {
     flex-flow: column;
     padding-right: 900px;
 }
+#flashCardContainer {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 90px;
+    right: 58%;
+   
+  }
+
+  #back {
+    display: none;
+  }
+
+  .getnextjokebutton {
+    position: relative;
+    top: 90px;
+  }
