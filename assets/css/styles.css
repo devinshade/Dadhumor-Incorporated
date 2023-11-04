@@ -3,6 +3,10 @@ color: white;
 font-family: 'Overpass', sans-serif;
 }
 
+body {
+    background-image: linear-gradient(to right, #4a148c, #64ffda, #ec407a);
+}
+
 header {
 padding: 10px;
 margin: 10px 100px 10px 100px;
@@ -73,4 +77,49 @@ right: 220px;
     display: inline;
     flex-flow: column;
     padding-right: 900px;
+}
+#flashCardContainer {
+    margin-right: 185px;
+}
+/* test hover text */
+/* this is a _demo_ container. remember the importance of relative and absolute positioning */
+.tooltip-container {
+    position: relative;
+    display: flex;
+    place-content: center;
+}
+
+/* styling of the tooltip display */
+p#tooltip-text {
+    display: none;
+    position: absolute;
+    top: -60px;
+    right: -90px;
+    z-index: 1;
+    background: #64ffda;
+    padding: 8px;
+    font-size: 1rem;
+    color: black;
+    border-radius: 2px;
+    animation: fadeIn 0.6s;
+}
+
+/* optional styling to add a "wedge" to the tooltip */
+p#tooltip-text:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top: 8px solid #64ffda;
+}
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
 }
