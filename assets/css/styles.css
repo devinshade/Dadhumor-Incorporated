@@ -4,7 +4,8 @@
 }
 
 body {
-    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
+    background-image:   linear-gradient(to right, #4A148C, #64FFDA, #EC407A);
+    background-size: 100%;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
     display: inline;
 }
 
-
 #flashCardContainer {
     width: 300px;
     margin: 20px auto;
@@ -34,9 +34,9 @@ header {
     margin-right: 185px;
 }
 
-#back {
+  #back {
     display: none;
-}
+  }
 
 .getnextjokebutton {
     position: relative;
@@ -44,9 +44,56 @@ header {
     right: 190px;
 }
 
+.input-field input[type=text]:focus {
+    border-bottom: 0px;
+    box-shadow: 0 0px 0 0 #000;
+}
+    
 #forecast {
     display: inline;
     flex-flow: column;
     padding-right: 900px;
+  }
+
+/* test hover text */
+.tooltip-container {
+    position: relative;
+    display: flex;
+    place-content: center;
+}
+
+/* styling of the tooltip display */
+p#tooltip-text {
+    display: none;
+    position: absolute;
+    top: -60px;
+    right: -90px;
+    z-index: 1;
+    background: #64ffda;
+    padding: 8px;
+    font-size: 1rem;
+    color: black;
+    border-radius: 2px;
+    animation: fadeIn 0.6s;
+}
+
+/* optional styling to add a "wedge" to the tooltip */
+p#tooltip-text:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top: 8px solid #64ffda;
+}
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
 }
 
