@@ -83,7 +83,7 @@ function searchCity (cityName) {
   
         // Creates the cards for the 5 day forecast based on each array
         var forecastCard = document.createElement('div');
-        forecastCard.className = 'col s10 m6 l3';
+        forecastCard.className = 'forecast-card';
         forecastCard.innerHTML = `
           <div class="card pink lighten-1 center-align">
             <div class="card-content white-text">
@@ -167,3 +167,6 @@ function searchCity (cityName) {
     }
     
     getDadJoke();
+
+
+    

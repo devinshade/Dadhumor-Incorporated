@@ -1,52 +1,97 @@
 :root {
-    color: white;
-    font-family: 'Overpass', sans-serif;
+color: white;
+font-family: 'Overpass', sans-serif;
 }
+
 
 body {
-    background-image:   linear-gradient(to right, #4a148c, #64ffda, #ec407a);
+background-image: linear-gradient(to right, #4a148c, #64ffda, #ec407a);
 }
+
 
 header {
-    padding: 10px;
-    margin: 10px 100px 10px 100px;
+padding: 10px;
+margin: 10px 100px 10px 100px;
 }
+
 
 .btn-flat {
-    font-style: italic;
+font-style: italic;
 }
 
+
 #city {
-    display: inline;
+display: inline;
 }
+
+
 
 
 #flashCardContainer {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    top: 90px;
-    right: 58%;
-    margin-right: 185px;
+width: 300px;
+margin: 20px auto;
+text-align: center;
+cursor: pointer;
+position: relative;
+top: 90px;
+right: 50.5%;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1;
 }
 
-#back {
-    display: none;
+
+#front, #back {
+font-size: 20px;
 }
+
 
 .getnextjokebutton {
-    position: relative;
-    top: 90px;
-    right: 190px;
+position: relative;
+top: 350px;
+right: 185%;
 }
 
+
 #forecast {
-    display: inline;
-    flex-flow: column;
-    padding-right: 900px;
+display: flex;
 }
+
+
+#weather-info {
+position: relative;
+bottom: 275px;
+z-index: 0;
+
+}
+
+
+.forecast-card {
+width: 100%;
+margin: 10px;
+align-items: center;
+position: relative;
+bottom: 175px;
+right: 220px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
