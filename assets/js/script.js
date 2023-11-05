@@ -12,23 +12,25 @@ form.addEventListener('submit', function(event) {
   event.preventDefault();
 
   var cityName = cityInput.value;
-
   searchCity(cityName);
-  localStorage.setItem("City", cityName);
 
-  city.innerHTML = " "
+  var history = localStorage.getItem('History');
+  var cityArray = history ? JSON.parse(history) : [];
 
-  var cityLoc = localStorage.getItem("City");
-  var button = document.createElement("button");
+  cityArray.push(cityName);
+  localStorage.setItem('History', JSON.stringify(cityArray));
+
+  localStorage.setItem('City', cityName);
+
+  city.innerHTML = '';
+  var cityLoc = localStorage.getItem('City');
+
   var textNode = document.createTextNode(cityLoc);
-
   city.appendChild(textNode);
 
-  button.addEventListener("click", function() {
-    searchCity(cityLoc);
-  });
-
+  cityInput.value = '';
 });
+
 
 function searchCity (cityName) {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=3fffc9c73357ea67188499b2d5865e2b`)
@@ -168,5 +170,21 @@ function searchCity (cityName) {
     
     getDadJoke();
 
+    // window.onload is optional since it depends on the way in which you fire events
+window.onload=function(){
 
+    // selecting the elements for which we want to add a tooltip
+    const target = document.getElementById("flashCardContainer");
+    const tooltip = document.getElementById("tooltip-text");
     
+    // change display to 'block' on mouseover
+    target.addEventListener('mouseover', () => {
+      tooltip.style.display = 'block';
+    }, false);
+    
+    // change display to 'none' on mouseleave
+    target.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    }, false);
+    
+}
