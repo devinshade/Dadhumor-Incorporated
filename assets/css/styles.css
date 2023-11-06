@@ -3,7 +3,6 @@ color: white;
 font-family: 'Overpass', sans-serif;
 }
 
-
 body {
     background-image:   linear-gradient(to right, #4A148C, #64FFDA, #EC407A);
     background-size: 100%;
@@ -38,11 +37,10 @@ align-items: center;
 justify-content: center;
 z-index: 1;
 }
-  
+
 #front, #back {
 font-size: 20px;
 }
-
 
 .getnextjokebutton {
 position: relative;
@@ -50,18 +48,11 @@ top: 350px;
 right: 185%;
 }
 
-#forecast {
-display: flex;
-}
-
-
 #weather-info {
 position: relative;
 bottom: 275px;
 z-index: 0;
-
 }
-
 
 .forecast-card {
 width: 100%;
@@ -76,8 +67,18 @@ right: 220px;
     border-bottom: 0px;
     box-shadow: 0 0px 0 0 #000;
 }
+    
+#forecast {
+    display: inline;
+    flex-flow: column;
+    padding-right: 900px;
+}
 
-/* test hover text */
+#flashCardContainer {
+    margin-right: 185px;
+}
+
+/*  hover text */
 .tooltip-container {
     position: relative;
     display: flex;
@@ -99,7 +100,7 @@ p#tooltip-text {
     animation: fadeIn 0.6s;
 }
 
-/* optional styling to add a "wedge" to the tooltip */
+/* styling to add a "wedge" to the tooltip */
 p#tooltip-text:before {
   content: "";
   position: absolute;
@@ -118,20 +119,3 @@ p#tooltip-text:before {
    opacity: 1;
  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

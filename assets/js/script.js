@@ -186,5 +186,4 @@ window.onload=function(){
     target.addEventListener('mouseleave', () => {
       tooltip.style.display = 'none';
     }, false);
-    
 }
