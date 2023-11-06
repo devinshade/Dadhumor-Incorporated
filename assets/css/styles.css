@@ -2,17 +2,21 @@
 color: white;
 font-family: 'Overpass', sans-serif;
 }
+
 body {
     background-image:   linear-gradient(to right, #4A148C, #64FFDA, #EC407A);
     background-size: 100%;
 }
+
 header {
 padding: 10px;
 margin: 10px 100px 10px 100px;
 }
+
 .btn-flat {
 font-style: italic;
 }
+
 #city {
 display: inline;
 }
@@ -32,11 +36,9 @@ justify-content: center;
 z-index: 1;
 }
 
-
 #front, #back {
 font-size: 20px;
 }
-
 
 .getnextjokebutton {
 position: relative;
@@ -44,19 +46,11 @@ top: 350px;
 right: 185%;
 }
 
-
-/* #forecast {
-display: flex;
-} */
-
-
 #weather-info {
 position: relative;
 bottom: 275px;
 z-index: 0;
-
 }
-
 
 .forecast-card {
 width: 100%;
@@ -77,11 +71,12 @@ right: 220px;
     flex-flow: column;
     padding-right: 900px;
 }
+
 #flashCardContainer {
     margin-right: 185px;
 }
-/* test hover text */
-/* this is a _demo_ container. remember the importance of relative and absolute positioning */
+
+/*  hover text */
 .tooltip-container {
     position: relative;
     display: flex;
@@ -103,7 +98,7 @@ p#tooltip-text {
     animation: fadeIn 0.6s;
 }
 
-/* optional styling to add a "wedge" to the tooltip */
+/* styling to add a "wedge" to the tooltip */
 p#tooltip-text:before {
   content: "";
   position: absolute;

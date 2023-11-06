@@ -4,18 +4,42 @@ Weather app that displays dad jokes
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Welcome! This application allows users to easily search for the current weather forecast of cities worldwide and enjoy a daily dose of dad jokes. Whether you're planning a trip or just looking for a good laugh, our Dad Joke Weather Dashboard has got you covered. Our Dad Joke Weather Dashboard combines two essential aspects of daily life - staying informed about the weather and enjoying a good laugh.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## Usage
 
-## Table of Contents (Optional)
+Search for Weather: Use the search bar to type in the name of the city you want to check the weather for.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+View Weather Information: Once you've entered a city name, you'll see the current weather conditions, temperature, humidity, wind speed, and a 5-day forecast.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+Enjoy a Dad Joke: Reference the hover text to reveal the punchline and click the 'Next Joke' button to navigate the dad joke section to see a variety of dad jokes. Feel free to share these jokes with your friends and family for a good laugh.
+
+<!-- TODO: Add screenshot -->
+
+## Credits
+
+Contributors (link to GitHub accounts):
+
+[Luke Babers](https://github.com/Luwylbab)
+
+[Deborah Hariharan Margar](https://github.com/Deboh12)
+
+[Devin Shade](https://github.com/devinshade)
+
+[Britney Padron](https://github.com/britneypadr)
+
+Tools used:
+
+[OpenWeather API](https://openweathermap.org/forecast5)
+
+[icanhazdadjoke API](https://icanhazdadjoke.com/api)
+
+[Materialize CSS Framework](https://materializecss.com/getting-started.html)
+
+## Features
+
+When a user searches a city, the current forecast is displayed, along with the 5 day forecast.
+
+Diving into local storage, a user can view their recent searches.
+
+Dad jokes appear on the left side of the page, the user may hover over the dad-joke card for help text, and click on the card to reveal the punchline then click the <em>Next Joke</em> button to carousel through.
