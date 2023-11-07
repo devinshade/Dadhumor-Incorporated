@@ -15,7 +15,7 @@ View Weather Information: Once you've entered a city name, you'll see the curren
 
 Enjoy a Dad Joke: Reference the hover text to reveal the punchline and click the 'Next Joke' button to navigate the dad joke section to see a variety of dad jokes. Feel free to share these jokes with your friends and family for a good laugh.
 
-<!-- TODO: Add screenshot -->
+![Screenshot of Deployed Page](./assets/Screenshot%202023-11-06%20at%205.33.42 PM.png)
 
 ## Credits
 
