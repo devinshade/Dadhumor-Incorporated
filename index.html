@@ -38,12 +38,13 @@
         <h3 class="z-depth-4 flow-text center-align">Dad Jokes</h3>
     </div>
 
-    <div class="container row">
+    <div class="container">
       <div class="row container">
         <div id="flashCardContainer" class="col s12 l4 card pink lighten-1" onclick="toggleFlashCard()">
-          <div class="card-content white-text">
-            <span class="card-title" id="front"></span>
-            <p id="back"></p>
+            <p id="tooltip-text">Click to reveal punchline!</p>
+            <div class="card-content white-text">
+                <span class="card-title" id="front"></span>
+                <p id="back"></p>
           </div>
         </div>
       
@@ -81,6 +82,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- materialize src -->
     <script src="./assets/js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- local js file src -->
     <script src="./assets/js/script.js"></script>
 </body>
+</html>
