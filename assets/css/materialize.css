@@ -1097,6 +1097,11 @@
 
 .green-text {
   color: #64ffda !important;
+  background-color: #64ffda !important;
+}
+
+.green-text {
+  color: #64ffda !important;
 }
 
 .green.lighten-5 {

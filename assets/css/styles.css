@@ -3,7 +3,6 @@ color: white;
 font-family: 'Overpass', sans-serif;
 }
 
-
 body {
     background-image:   linear-gradient(to right, #4A148C, #64FFDA, #EC407A);
     background-size: 100%;
@@ -42,15 +41,15 @@ justify-content: center;
 z-index: 1;
 
 }
- 
 
 /* same font size for front and back of flashcard */
+
 #front, #back {
 font-size: 20px;
 }
 
-
 /* positioning for "next joke" button */
+
 .getnextjokebutton {
     position: relative;
     right: 540px;
@@ -64,6 +63,7 @@ display: flex;
 }
 
 /* positioning for the main weather card */
+
 #weather-info {
 position: relative;
 bottom: 275px;
@@ -71,6 +71,7 @@ z-index: 0;
 }
 
 /* positioning for the rest of the week (pink weather cards) */
+
 .forecast-card {
 width: 100%;
 margin: 10px;
@@ -86,7 +87,7 @@ right: 220px;
     box-shadow: 0 0px 0 0 #000;
 }
 
-/* test hover text */
+/*  hover text */
 .tooltip-container {
     position: relative;
     display: flex;
@@ -108,7 +109,7 @@ p#tooltip-text {
     animation: fadeIn 0.6s;
 }
 
-/* optional styling to add a "wedge" to the tooltip */
+/* styling to add a "wedge" to the tooltip */
 p#tooltip-text:before {
   content: "";
   position: absolute;
@@ -127,9 +128,6 @@ p#tooltip-text:before {
    opacity: 1;
  }
 }
-
-
-
 
 
 /* Media queries for different viewports */
@@ -247,13 +245,6 @@ p#tooltip-text:before {
 
   }
 
-
-
-
-
-  
-
-
   @media only screen and (min-width: 993px) and (max-width: 1430px) {
     header {
       margin: 10px;
@@ -309,8 +300,6 @@ p#tooltip-text:before {
 
   }
 
-  
-
   @media only screen and (min-width: 1430px) and (max-width: 1750px) {
     header {
         margin: 10px;
@@ -365,4 +354,3 @@ p#tooltip-text:before {
       }
   
     }
-  
