@@ -118,6 +118,7 @@ function searchCity (cityName) {
             'User-Agent': 'DadJokeViewer'
           }
         });
+        
         const jokeData = await jokeResponse.json();
         const jokeText = jokeData.joke;
     
@@ -169,6 +170,8 @@ function searchCity (cityName) {
     }
     
     getDadJoke();
+
+
 
     // window.onload is optional since it depends on the way in which you fire events
 window.onload=function(){
